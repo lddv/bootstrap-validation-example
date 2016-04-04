@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap Validation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center"><a href="http://bairesdev.com/" target="_blank">BairesDev</a> test - Bootstrap Validation</h1>
+
+      <form id="myForm" role="form" data-toggle="validator" class="form-horizontal">
+        <div class="form-group has-feedback">
+          <label for="number1" class="control-label">Input Number 1</label>
+          <input type="text" class="form-control" id="number1"
+            placeholder="Please insert a valid number" pattern="^-?[0-9]+(\.|\,)?[0-9]+$" required>
+          <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+          <div class="help-block with-errors"></div>
+        </div>
+        <div class="form-group has-feedback">
+          <label for="number2" class="control-label">Input Number 2</label>
+          <input type="text" class="form-control" id="number2"
+            placeholder="Please insert a valid number" pattern="^-?[0-9]+(\.|\,)?[0-9]+$" required>
+          <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+          <div class="help-block with-errors"></div>
+        </div>
+        <div class="form-group has-feedback">
+          <label for="number3" class="control-label">Input Number 3</label>
+          <input type="text" class="form-control" id="number3"
+            placeholder="Please insert a valid number" pattern="^-?[0-9]+(\.|\,)?[0-9]+$" required>
+          <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+          <div class="help-block with-errors"></div>
+        </div>
+        <div class="form-group">
+          <div class="col-xs-offset-1 col-xs-10">
+            <button class="btn btn-primary btn-block" type="submit" disabled="disabled">Submit</button>
+          </div>
+        </div>
+      </form>
+
+      <hr>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title text-center">Below there is a layout that shows 3 columns in desktop and 1 column in mobile.</h3>
+        </div>
+        <div class="panel-body">
+          <div class="row visible-xs">
+            <div class="col-xs-12">
+              <p>
+                <strong>Content: </strong>You will only see this content if you are on a window with <em><strong>LESS</strong> THAN</em> 768px.
+              </p>
+            </div>
+          </div>
+          <div class="row hidden-xs">
+            <div class="col-sm-4">
+              <p>
+                <strong>Content 1: </strong>You will only see this content if you are on a window with <em><strong>MORE</strong> THAN</em> 768px.
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <p>
+                <strong>Content 2: </strong>You will only see this content if you are on a window with <em><strong>MORE</strong> THAN</em> 768px.
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <p>
+                <strong>Content 3: </strong>You will only see this content if you are on a window with <em><strong>MORE</strong> THAN</em> 768px.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="1000hz.validator.min.js"></script>
+</html>
